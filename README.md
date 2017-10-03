@@ -8,9 +8,7 @@ Students are expected to:
 * Push your commits regularly, with proper commit messages
 
 Student Info
-=======================
-
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+* Name: Bùi Ngọc Sơn
+* ID: USTHBI5-116
+* Group ID: 9
+* Project Name: IRC Client
