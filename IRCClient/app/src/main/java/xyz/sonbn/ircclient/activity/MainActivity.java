@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements ClientActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initializeToolbar();
         initializeDrawer();
 
         if (savedInstanceState == null) {
@@ -71,6 +72,11 @@ public class MainActivity extends AppCompatActivity implements ClientActivity {
     public void onServerSelected(Server server) {
         ConversationFragment conversationFragment = new ConversationFragment();
         switchToFragment(conversationFragment, ConversationFragment.TRANSACTION_TAG);
+    }
+
+    public void initializeToolbar() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
 
     public void initializeDrawer() {
