@@ -1,7 +1,6 @@
 package xyz.sonbn.ircclient.activity;
 
 import android.content.Intent;
-import android.nfc.Tag;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
@@ -9,13 +8,12 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import xyz.sonbn.ircclient.R;
-import xyz.sonbn.ircclient.fragment.ConversationFragment;
+import xyz.sonbn.ircclient.fragment.ChannelFragment;
 import xyz.sonbn.ircclient.fragment.OverviewFragment;
 import xyz.sonbn.ircclient.model.Server;
 
@@ -70,8 +68,8 @@ public class MainActivity extends AppCompatActivity implements ClientActivity {
 
     @Override
     public void onServerSelected(Server server) {
-        ConversationFragment conversationFragment = new ConversationFragment();
-        switchToFragment(conversationFragment, ConversationFragment.TRANSACTION_TAG);
+        ChannelFragment channelFragment = new ChannelFragment();
+        switchToFragment(channelFragment, ChannelFragment.TRANSACTION_TAG);
     }
 
     public void initializeToolbar() {
