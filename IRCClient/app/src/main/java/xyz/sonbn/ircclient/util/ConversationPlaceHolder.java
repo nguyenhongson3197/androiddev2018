@@ -2,10 +2,6 @@ package xyz.sonbn.ircclient.util;
 
 import xyz.sonbn.ircclient.R;
 
-/**
- * Created by sonbn on 10/30/2017.
- */
-
 public enum ConversationPlaceHolder {
     RED(R.string.red, R.layout.view_red),
     BLUE(R.string.blue, R.layout.view_blue),

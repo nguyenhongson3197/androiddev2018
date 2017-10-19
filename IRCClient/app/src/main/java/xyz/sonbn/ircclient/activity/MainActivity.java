@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import xyz.sonbn.ircclient.R;
-import xyz.sonbn.ircclient.fragment.ChannelFragment;
+import xyz.sonbn.ircclient.fragment.ServerFragment;
 import xyz.sonbn.ircclient.fragment.OverviewFragment;
 import xyz.sonbn.ircclient.model.Server;
 
@@ -68,8 +68,8 @@ public class MainActivity extends AppCompatActivity implements ClientActivity {
 
     @Override
     public void onServerSelected(Server server) {
-        ChannelFragment channelFragment = new ChannelFragment();
-        switchToFragment(channelFragment, ChannelFragment.TRANSACTION_TAG);
+        ServerFragment serverFragment = new ServerFragment();
+        switchToFragment(serverFragment, ServerFragment.TRANSACTION_TAG);
     }
 
     public void initializeToolbar() {

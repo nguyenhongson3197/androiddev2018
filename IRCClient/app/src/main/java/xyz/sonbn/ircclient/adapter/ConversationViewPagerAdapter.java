@@ -9,10 +9,6 @@ import android.view.ViewGroup;
 import xyz.sonbn.ircclient.fragment.ConversationFragment;
 import xyz.sonbn.ircclient.util.ConversationPlaceHolder;
 
-/**
- * Created by sonbn on 10/30/2017.
- */
-
 public class ConversationViewPagerAdapter extends PagerAdapter {
     private Context mContext;
 
